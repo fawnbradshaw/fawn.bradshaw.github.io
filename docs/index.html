@@ -7,49 +7,87 @@
   <meta charset="utf-8">
 
   <style>
+    
+    /* *{ */
+      /* border: thin red solid; */
+    /* } */
+    
     body {
       padding-top: 40px;
       padding-bottom: 40px;
       background-color: floralwhite;
+      display: flex;
+      justify-content: center;
     }
 
     .banner-image {
       width: 128px;
       height: 128px;
       object-fit: cover;
-      border-radius: 128px;
+      border-radius: 200px;
+      
     }
 
     .thumbnail {
       width: 30px;
       height: 30px;
-      /* border-radius: 48px; */
       object-fit: cover;
     }
-
+    .thumbnail_tbe {
+      width: 30px;
+      height: 30px;
+      border-radius: 48px;
+      object-fit: cover;
+    }
     .name {
       color: #272343;
+      display: flex;
+      justify-content: center;
+    }
+
+    .social-icons{
+      display: flex;
+      justify-content: space-around;
     }
 
     .social-icons a {
-      color: ;
+      color: #272343;
       text-decoration: none;
     }
 
     .link {
-      /* background-color: ; */
+      background-color: #abd1c6;
       height: 60px;
-      
+      display: flex;
+      align-items: center;
+      padding: 5px;
     }
 
-    .link 
+    .link a {
+      color: #272343;
+      text-decoration: none;
+      text-align: center;
+      flex-grow: 1;
+    }
 
+    .items {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 640px;
+      flex-grow: 1;
+    }
 
+    .banner {
+      display: flex;
+      justify-content: center;
+    }
   </style>
 
 </head>
 
 <body>
+  <div class="items">
   <div class="banner">
     <img src="/thumbnails/uchicagoid.jpg" alt="Fawn Bradshaw headshot" class="banner-image">
   </div>
@@ -78,7 +116,7 @@
   
   <div class="link">
     <img src="https://wearethecity.com/wp-content/uploads/2015/11/chicago-booth-featured.png"
-      class="thumbnail">
+      class="thumbnail_tbe">
   
     <a target="_blank"
       href="https://theboothexp.com/author/fbradshaw/">University of Chicago The Booth Experience Publications</a>
@@ -86,11 +124,12 @@
   
   <div class="link">
     <img
-      src="https://media.newyorker.com/photos/59096d451c7a8e33fb38e4ca/16:9/w_1280,c_limit/071210_r16884_p646.jpg">
+      src="/thumbnails/plants.jpg"
+      class="thumbnail">
   
     <a target="_blank" href="https://www.instagram.com/theplantyshelf/">The Planty Shelf Instagram</a>
   </div>
-
+  </div>
 
 </body>
 
